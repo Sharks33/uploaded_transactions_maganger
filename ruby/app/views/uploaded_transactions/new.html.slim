@@ -1,6 +1,6 @@
 h1 New Transaction
 
-= form_for [@agent, @uploaded_transaction] do |f|
+= form_for [@agent, @uploaded_transaction], validate: true do |f|
   .form-group
     = f.label :address
     = f.text_field :address, class: "form-control"

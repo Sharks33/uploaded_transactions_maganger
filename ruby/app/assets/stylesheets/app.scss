@@ -1,1 +1,10 @@
 @import "bootstrap";
+
+.message {
+    color: red;
+    font-weight: bold;
+}
+
+.message::first-letter {
+    text-transform: capitalize;
+}
