@@ -75,3 +75,17 @@
 *:first-child + html .pagination {
     overflow: hidden; 
 }
+
+th, td {
+    padding: 0 2px 0 2px;
+}
+
+td:not(:first-child), th:not(:first-child) {
+    text-align: center;
+    padding: 0 8px 0 8px;
+}
+
+tr:nth-child(even):not(:first-child) {
+    background-color: #eee;
+}
+
