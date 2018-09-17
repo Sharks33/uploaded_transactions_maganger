@@ -1,7 +1,8 @@
+require 'will_paginate/array'
+
 class AgentsController < ApplicationController
   def show
     @agent = Agent.find(params[:id])
-    # @uploaded_transactions = @agent.all_transactions
     @uploaded_transactions = @agent.all_transactions.paginate(:page => params[:page], per_page: 15)
   end
 
